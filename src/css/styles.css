@@ -95,9 +95,6 @@
 
 /* hero section */
 
-.transition-wrapper:hover .element1 {
-    transform: none;
-}
 .body_wrapper .hero-section{
     /* border: 1px solid rgb(14, 0, 9); */
     width: 100%;
@@ -132,7 +129,7 @@
     letter-spacing: 4px;
     text-align: center;
     font-weight: 200;
-    transition: 4s;
+    transition: 7s;
     transform: translateY(18px);
 }
 .hero-section .hero-content section h1 b{
@@ -241,17 +238,17 @@
 .main-body .must-read .must-read-books .book1:hover,
 .main-body .must-read .must-read-books .book2:hover,
 .main-body .must-read .must-read-books .book3:hover{
-    -ms-transform: scale(0.9);
+    -ms-transform: scale(1.03);
         /* IE 9 */
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 .main-body .must-read .must-read-books .book1 .top,
 .main-body .must-read .must-read-books .book2 .top,
 .main-body .must-read .must-read-books .book3 .top {
     width: 100%;
     /* border:1px solid red; */
-    height: 60%;
+    height: 50%;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: center;
@@ -269,7 +266,7 @@
 .main-body .must-read .must-read-books .book3 .bottom {
     width: 100%;
     /* border: 1px solid rgb(0, 255, 60); */
-    height: 40%;
+    height: 50%;
     border-radius: 0px 0px 10px 10px;
     background-color: #F6F6F6;
     display: flex;
@@ -284,9 +281,44 @@
 .main-body .must-read .must-read-books .book3 .bottom header,
 .main-body .must-read .must-read-books .book3 .bottom .book3-content,
 .main-body .must-read .must-read-books .book3 .bottom button{
-    height: 34.5%;
+    height: 25%;
     /* border: 1px solid black; */
 }
+
+/* must read rating sub section */
+.main-body .must-read .must-read-books .book1 .bottom .rating,
+.main-body .must-read .must-read-books .book2 .bottom .rating,
+.main-body .must-read .must-read-books .book3 .bottom .rating{
+    width: 100%;
+    border-bottom: 0.5px solid #D0D5DD;
+    height: 25%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    align-items: center;
+    gap: 10px;
+}
+.main-body .must-read .must-read-books .book1 .bottom .rating h1,
+.main-body .must-read .must-read-books .book2 .bottom .rating h1,
+.main-body .must-read .must-read-books .book3 .bottom .rating h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.main-body .must-read .must-read-books .book1 .bottom .rating img,
+.main-body .must-read .must-read-books .book2 .bottom .rating img,
+.main-body .must-read .must-read-books .book3 .bottom .rating img{
+    width: 100px;
+    height: 15px;
+}
+.main-body .must-read .must-read-books .book1 .bottom .rating p,
+.main-body .must-read .must-read-books .book2 .bottom .rating p,
+.main-body .must-read .must-read-books .book3 .bottom .rating p{
+    color: #475467;
+    font-weight: 100;
+    font-size: 14px;
+}
+
 .main-body .must-read .must-read-books .book1 .bottom header h1,
 .main-body .must-read .must-read-books .book2 .bottom header h1,
 .main-body .must-read .must-read-books .book3 .bottom header h1{
@@ -299,20 +331,23 @@
 .main-body .must-read .must-read-books .book1 .bottom .book1-content,
 .main-body .must-read .must-read-books .book2 .bottom .book2-content,
 .main-body .must-read .must-read-books .book3 .bottom .book3-content{
-    height: 31%;
+    height: 25%;
     border-block: 0.5px solid #D0D5DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-body .must-read .must-read-books .book1 .bottom .book1-content section,
 .main-body .must-read .must-read-books .book2 .bottom .book2-content section,
 .main-body .must-read .must-read-books .book3 .bottom .book3-content section{
-    padding: 15px;
+    width: 88%;
+    /* padding: 15px; */
     display: flex;
     justify-content: space-between;
     color: #1D2939;
     font-size: 15px;
     align-items: center;
-    /* border: 1px solid rgb(248, 63, 63); */
 }
 .main-body .must-read .must-read-books .book1 .bottom .book1-content section p:last-child b,
 .main-body .must-read .must-read-books .book2 .bottom .book2-content section p:last-child b,
@@ -345,7 +380,7 @@
     background-color: #4E48E0;
 }
 
-/* reviews styling */
+/* review section styling */
 .main-body .reviews{
     width: 100%;
     height: 80vh;
@@ -469,4 +504,94 @@
 }
 .main-body .reviews .slider{
     width: 70px;
+}
+
+.body_wrapper .footer_body{
+    width: 100%;
+    height: 120vh;
+    border: 2px solid red;
+    background-image: url('../assets/footer.svg');
+    display: flex;
+    flex-direction: column;
+}
+.body_wrapper .footer_body .top_wrapper {
+    /* border: 2px solid yellow; */
+    width: 95%;
+    height: 50%;
+    padding-top: 30px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.body_wrapper .footer_body .top_wrapper header {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+.body_wrapper .footer_body .top_wrapper header h1{
+    font-size: 43px;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    line-height: 4rem;
+}
+.body_wrapper .footer_body .top_wrapper header p{
+    color: white;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.body_wrapper .footer_body .top_wrapper .footer-img{
+    height: 100%;
+    margin-left: auto;
+}
+.body_wrapper .footer_body .top_wrapper section{
+    /* border: 2px solid red; */
+    position: relative;
+}
+.body_wrapper .footer_body .top_wrapper section input:first-child{
+    background-color: #3F446D;
+    width: 70%;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 30px;
+}
+.body_wrapper .footer_body .top_wrapper section input:first-child::placeholder {
+    color: #FFFFFF;
+}
+.body_wrapper .footer_body .top_wrapper section input:last-child{
+    position: absolute;
+    margin-left: -30px;
+    width: 27%;
+    background-color: white;
+    color: #4E48E0;
+    padding: 16px 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* bottom section of the footer */
+.body_wrapper .footer_body .bottom_wrapper{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    border-top: 1px solid #5A5881;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer {
+    border: 2px solid rgb(255, 0, 170);
+    width: 90%;
+    height: 50%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
