@@ -426,6 +426,15 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    transition: 0.7s;
+}
+.main-body .reviews .reviews_body .article1:hover,
+.main-body .reviews .reviews_body .article2:hover,
+.main-body .reviews .reviews_body .article3:hover{
+    -ms-transform: scale(1.03);
+    /* IE 9 */
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 .main-body .reviews .reviews_body .article1 .inner-layer,
 .main-body .reviews .reviews_body .article2 .inner-layer,
@@ -489,7 +498,7 @@
 
 .body_wrapper .footer_body{
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     background-image: url('../assets/footer.svg');
     display: flex;
     flex-direction: column;
@@ -532,17 +541,18 @@
 }
 .body_wrapper .footer_body .top_wrapper section input:first-child{
     background-color: #3F446D;
-    width: 70%;
+    width: 80%;
     border: none;
     padding: 16px 20px;
     border-radius: 30px;
+    color: white;
 }
 .body_wrapper .footer_body .top_wrapper section input:first-child::placeholder {
     color: #FFFFFF;
 }
 .body_wrapper .footer_body .top_wrapper section input:last-child{
     position: absolute;
-    margin-left: -30px;
+    margin-left: -165px;
     width: 27%;
     background-color: white;
     color: #4E48E0;
@@ -551,7 +561,10 @@
     border-radius: 30px;
     border: none;
 }
-
+.body_wrapper .footer_body .top_wrapper section input:last-child:hover{
+    background-color: rgba(255, 255, 255, 0.923);
+    font-weight: 900;
+}
 
 /* bottom section of the footer */
 .body_wrapper .footer_body .bottom_wrapper{
@@ -584,8 +597,13 @@
     display: flex;
     gap: 20px;
     color: white;
+    font-weight: 100;
 }
-
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .top span p:hover{
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: underline;
+}
 .body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom{
     height: 100%;
     border-top: 1px solid #5A5881;
@@ -594,11 +612,22 @@
 .body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content{
     width: 100%;
     display: flex;
-    color: white;
+    color: rgba(232, 231, 252, 0.86);
     justify-content: space-between;
     align-self: flex-end;
 }
 .body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content section{
     display: flex;
     gap: 20px;
+}
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content p,
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content section section{
+    font-weight: 100;
+    font-size: 14px;
+}
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content p:hover,
+.body_wrapper .footer_body .bottom_wrapper .bottom_subcontainer .bottom .bottom_content section section:hover{
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: underline;
 }
