@@ -59,7 +59,9 @@
     font-size: 22px;
     cursor: pointer;
 }
-
+.body_wrapper .nav-header .promotion{
+    /* display: none; */
+}
 /* body wrapper */
 .body_wrapper .main-body{
     width: 100%;
@@ -328,7 +330,7 @@
 .main-body .must-read .must-read-books .book2 .bottom .rating p,
 .main-body .must-read .must-read-books .book3 .bottom .rating p{
     color: #475467;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -537,7 +539,6 @@
 .body_wrapper .footer_body .top_wrapper {
     width: 95%;
     height: 55%;
-    padding-top: 30px;
     margin-left: auto;
     display: flex;
     align-items: center;
